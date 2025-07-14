@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Anamnese</title>
+    <title>Formulário de Anaminese</title>
     <!-- Inclui o Tailwind CSS para estilização rápida e responsiva -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -116,10 +116,10 @@
         <!-- O 'src' abaixo foi atualizado com o URL raw do seu GitHub. -->
         <img src="https://raw.githubusercontent.com/wellingtonsouzapersonal/Formul-rio-de-Anaminese/main/WS%20LOGO%20MARCADA%CC%81GUA.png" alt="Logomarca" class="logo" onerror="this.onerror=null; this.src='https://placehold.co/150x50/cccccc/333333?text=Logo+Não+Encontrada';">
 
-        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Formulário de Anamnese</h2>
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Formulário de Anaminese</h2>
 
         <!-- ATENÇÃO: Substitua "https://formspree.io/f/SEU_ENDPOINT_DO_FORMSPREE" pelo URL que você copiar do Formspree.io -->
-        <form id="anamnesisForm" action="https://formspree.io/f/mdkdndwa" method="POST" class="space-y-6">
+        <form id="anamnesisForm" action="https://formspree.io/f/mdkdndwa" method="POST" class="space-y-6" enctype="multipart/form-data">
 
             <div class="section-title">Informações Pessoais</div>
 
@@ -314,8 +314,8 @@
                 <label>Qual seu nível de experiência com musculação?</label>
                 <div class="radio-group flex flex-col mt-2 space-y-2">
                     <label><input type="radio" name="nivelExperienciaMusculacao" value="Iniciante" required> Iniciante (nunca treinou ou treinou pouco)</label>
-                    <label><input type="radio" name="nivelExperienciaMusculacao" value="Intermediario"> Intermediário (treina há algum tempo, mas sem grande regularidade/intensidade)</label>
-                    <label><input type="radio" name="nivelExperienciaMusculacao" value="Avancado"> Avançado (treina há bastante tempo, com regularidade e intensidade)</label>
+                    <label><input type="radio" name="nivelExperienciaMusculacao" value="Intermediário"> Intermediário (treina há algum tempo, mas sem grande regularidade/intensidade)</label>
+                    <label><input type="radio" name="nivelExperienciaMusculacao" value="Avançado"> Avançado (treina há bastante tempo, com regularidade e intensidade)</label>
                 </div>
                 <div id="experienciaDetalhes" class="hidden-group">
                     <label for="tempoTreinou" class="mt-2">Tempo que treinou:</label>
@@ -354,7 +354,7 @@
                 <label>Sua alimentação é:</label>
                 <div class="radio-group flex flex-col mt-2 space-y-2">
                     <label><input type="radio" name="alimentacao" value="Equilibrada" required> Equilibrada</label>
-                    <label><input type="radio" name="alimentacao" value="Rica em proteinas"> Rica em proteínas</label>
+                    <label><input type="radio" name="alimentacao" value="Rica em proteínas"> Rica em proteínas</label>
                     <label><input type="radio" name="alimentacao" value="Rica em carboidratos"> Rica em carboidratos</label>
                     <label><input type="radio" name="alimentacao" value="Restritiva"> Restritiva</label>
                     <label><input type="radio" name="alimentacao" value="Ruim"> Ruim</label>
@@ -377,7 +377,7 @@
                 <label>Nível de estresse:</label>
                 <div class="radio-group flex mt-2">
                     <label><input type="radio" name="nivelEstresse" value="Baixo" required> Baixo</label>
-                    <label><input type="radio" name="nivelEstresse" value="Medio"> Médio</label>
+                    <label><input type="radio" name="nivelEstresse" value="Médio"> Médio</label>
                     <label><input type="radio" name="nivelEstresse" value="Alto"> Alto</label>
                 </div>
             </div>
@@ -389,11 +389,11 @@
                 <div class="checkbox-group flex flex-col mt-2 space-y-2">
                     <label><input type="checkbox" name="objetivosMusculacao" value="Ganho de Massa Muscular"> Ganho de Massa Muscular (Hipertrofia)</label>
                     <label><input type="checkbox" name="objetivosMusculacao" value="Emagrecimento / Perda de Gordura"> Emagrecimento / Perda de Gordura</label>
-                    <label><input type="checkbox" name="objetivosMusculacao" value="Melhora da Forca"> Melhora da Força</label>
-                    <label><input type="checkbox" name="objetivosMusculacao" value="Melhora da Resistencia"> Melhora da Resistência</label>
-                    <label><input type="checkbox" name="objetivosMusculacao" value="Condicionamento Fisico Geral"> Condicionamento Físico Geral</label>
-                    <label><input type="checkbox" name="objetivosMusculacao" value="Saude e Bem-estar"> Saúde e Bem-estar</label>
-                    <label><input type="checkbox" name="objetivosMusculacao" value="Reabilitacao / Fortalecimento" id="reabilitacaoCheckbox"> Reabilitação / Fortalecimento</label>
+                    <label><input type="checkbox" name="objetivosMusculacao" value="Melhora da Força"> Melhora da Força</label>
+                    <label><input type="checkbox" name="objetivosMusculacao" value="Melhora da Resistência"> Melhora da Resistência</label>
+                    <label><input type="checkbox" name="objetivosMusculacao" value="Condicionamento Físico Geral"> Condicionamento Físico Geral</label>
+                    <label><input type="checkbox" name="objetivosMusculacao" value="Saúde e Bem-estar"> Saúde e Bem-estar</label>
+                    <label><input type="checkbox" name="objetivosMusculacao" value="Reabilitação / Fortalecimento" id="reabilitacaoCheckbox"> Reabilitação / Fortalecimento</label>
                     <div id="reabilitacaoDetalhes" class="hidden-group">
                         <textarea id="especificarReabilitacao" name="especificarReabilitacao" rows="2" class="rounded-lg mt-2" placeholder="Especifique a reabilitação/fortalecimento"></textarea>
                     </div>
@@ -410,8 +410,32 @@
                 <textarea id="outrasInformacoes" name="outrasInformacoes" rows="4" class="rounded-lg"></textarea>
             </div>
 
+            <!-- Nova Seção: Foto para Avaliação Postural -->
+            <div class="section-title">Foto para Avaliação Postural</div>
+
+            <div class="form-group">
+                <label for="fotoFrente">Foto de Frente:</label>
+                <input type="file" id="fotoFrente" name="fotoFrente" accept="image/*" class="rounded-lg p-2 border border-gray-300">
+            </div>
+
+            <div class="form-group">
+                <label for="fotoCostas">Foto de Costas:</label>
+                <input type="file" id="fotoCostas" name="fotoCostas" accept="image/*" class="rounded-lg p-2 border border-gray-300">
+            </div>
+
+            <div class="form-group">
+                <label for="fotoPerfilEsquerdo">Foto de Perfil Esquerdo:</label>
+                <input type="file" id="fotoPerfilEsquerdo" name="fotoPerfilEsquerdo" accept="image/*" class="rounded-lg p-2 border border-gray-300">
+            </div>
+
+            <div class="form-group">
+                <label for="fotoPerfilDireito">Foto de Perfil Direito:</label>
+                <input type="file" id="fotoPerfilDireito" name="fotoPerfilDireito" accept="image/*" class="rounded-lg p-2 border border-gray-300">
+            </div>
+            <!-- Fim da Nova Seção -->
+
             <!-- Botão de Enviar -->
-            <button type="submit">Enviar Anamnese</button>
+            <button type="submit">Enviar Anaminese</button>
         </form>
     </div>
 
