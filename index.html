@@ -108,6 +108,13 @@
             max-width: 150px; /* Define um tamanho máximo para a logo */
             height: auto;
         }
+        .observation-text {
+            font-size: 0.9rem;
+            color: #6b7280; /* gray-500 */
+            margin-top: 10px;
+            font-style: italic;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -223,20 +230,8 @@
                     <label><input type="radio" name="problemasArticulacoes" value="Não"> Não</label>
                 </div>
                 <div id="articulacoesDetalhes" class="hidden-group">
-                    <label for="qualProblemaArticulacao" class="mt-2">Problema(s) e localização:</label>
+                    <label for="qualProblemaArticulacao" class="mt-2">Problema(s), localização e frequência:</label>
                     <textarea id="qualProblemaArticulacao" name="qualProblemaArticulacao" rows="2" class="rounded-lg"></textarea>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>Sente dores frequentes?</label>
-                <div class="radio-group flex mt-2">
-                    <label><input type="radio" name="doresFrequentes" value="Sim" required> Sim</label>
-                    <label><input type="radio" name="doresFrequentes" value="Não"> Não</label>
-                </div>
-                <div id="doresDetalhes" class="hidden-group">
-                    <label for="ondeQuandoDores" class="mt-2">Local e frequência:</label>
-                    <textarea id="ondeQuandoDores" name="ondeQuandoDores" rows="2" class="rounded-lg"></textarea>
                 </div>
             </div>
 
@@ -432,6 +427,11 @@
                 <label for="fotoPerfilDireito">Foto de Perfil Direito:</label>
                 <input type="file" id="fotoPerfilDireito" name="fotoPerfilDireito" accept="image/*" class="rounded-lg p-2 border border-gray-300">
             </div>
+
+            <!-- Observação adicionada aqui -->
+            <p class="observation-text">
+                Observação: as fotos deverão ser tiradas com uma boa iluminação, utilizando biquíni ou short relativamente curto e topper (arquivos protegidos).
+            </p>
             <!-- Fim da Nova Seção -->
 
             <!-- Botão de Enviar -->
@@ -569,7 +569,6 @@
             toggleDetails('doencaCronica', 'doencaCronicaDetalhes');
             toggleDetails('cirurgiaUltimos12Meses', 'cirurgiaDetalhes');
             toggleDetails('problemasColuna', 'colunaDetalhes');
-            toggleDetails('doresFrequentes', 'doresDetalhes');
             toggleDetails('lesaoMuscularArticular', 'lesaoDetalhes');
             toggleDetails('restricaoMedica', 'restricaoMedicaDetalhes');
             toggleDetails('fuma', 'fumaDetalhes');
